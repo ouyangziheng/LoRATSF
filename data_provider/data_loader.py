@@ -10,15 +10,6 @@ import warnings
 
 warnings.filterwarnings('ignore')
 
-# import debugpy
-
-# # 在指定端口开启调试
-# debugpy.listen(5678)
-# print("Waiting for debugger to attach...")
-
-# # 这里暂停，等待调试器连接
-# debugpy.wait_for_client()
-
 
 class Dataset_ETT_hour(Dataset):
     def __init__(self, root_path, flag='train', size=None,

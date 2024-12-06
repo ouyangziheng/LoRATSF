@@ -3,6 +3,7 @@ if [ ! -d "./logs" ]; then
 fi
 
 model_name=SparseTSF
+teacher_model_name=SparseTSF
 
 root_path_name=./dataset/
 data_path_name=ETTh1.csv
@@ -10,14 +11,15 @@ model_id_name=ETTh1
 data_name=ETTh1
 
 seq_len=720
-for pred_len in 720
+for pred_len in 96
 do
-  python -u run_longExp.py \
-    --is_training 0 \
+  python -u run_expmain_distill.py \
+    --is_training 1 \
     --root_path $root_path_name \
     --data_path $data_path_name \
     --model_id $model_id_name'_'$seq_len'_'$pred_len \
     --model $model_name \
+    --teacher_model $teacher_model_name\
     --data $data_name \
     --features M \
     --seq_len $seq_len \

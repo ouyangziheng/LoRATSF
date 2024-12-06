@@ -10,15 +10,6 @@ data_dict = {
     'Solar': Dataset_Solar,
     'National_illness':Dataset_Custom
 }
-import debugpy
-
-# 在指定端口开启调试
-debugpy.listen(5678)
-print("Waiting for debugger to attach...")
-
-# 这里暂停，等待调试器连接
-debugpy.wait_for_client()
-
 
 def data_provider(args, flag):
     Data = data_dict[args.data]
