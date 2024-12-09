@@ -11,9 +11,9 @@ focusing purely on minimizing the number of parameters without compromising the 
 
 **LoRATSF** builds upon the **SparseTSF** model, which introduced a novel approach to time series forecasting, featuring:
 
-- **Lightweight design**: The model has fewer than **1k** parameters, making it orders of magnitude smaller than other models.
-- **Decoupling of periodicity and trends**: Through **Cross-Period Sparse Forecasting**, SparseTSF effectively separates periodic and trend components in time series data.
-- **Excellent generalization capability**: SparseTSF has shown outstanding cross-domain generalization ability across multiple datasets, especially in scenarios with limited computational resources or smaller datasets.
+- **Lightweight design**: The model has **100** parameters, making it orders of magnitude smaller than other models.
+- **Decoupling of periodicity and trends**: Through **Cross-Period Sparse Forecasting**, LoRATSF effectively separates periodic and trend components in time series data like SparseTSF.
+- **Excellent generalization capability**: LoRATSF has shown outstanding cross-domain generalization ability across multiple datasets, especially in scenarios with limited computational resources or smaller datasets like SparseTSF.
 
 The reference for **SparseTSF** is as follows:
 
@@ -29,14 +29,14 @@ The reference for **SparseTSF** is as follows:
 
 ## Project Background
 
-This project is my final assignment for the Python course, aimed at exploring how to build an efficient long-term time series forecasting model. 
+This project is my final assignment for the Python course, aimed at exploring some probabilities to build an efficient long-term time series forecasting model. 
 The advantages of this model are:
 
 *   **Few parameters**: Making it deployable in resource-constrained environments.
 
 ## Project Objectives
 
-1.  **Optimize the SparseTSF model** to improve its adaptability to different time series datasets.
+1.  **Optimize the SparseTSF model** to minimize its parameters.
 2.  **Demonstrate the model’s performance** on multiple time series datasets, including traffic data, electricity load, etc.
 
 ## Environment Setup
