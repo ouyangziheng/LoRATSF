@@ -1,4 +1,4 @@
-# LoRATSF: Modeling Long-term Time Series Forecasting with *1k* Parameters using LoRA
+# LoRATSF: Modeling Long-term Time Series Forecasting with *100* Parameters
 
 **LoRATSF** (Lightweight Long-term Time Series Forecasting) is my final project for the Python course in my **second year of Nankai University**. 
 
